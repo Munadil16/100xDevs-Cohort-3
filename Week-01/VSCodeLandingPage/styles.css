@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #0e0e0e;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.navbar,
+.left-navbar-items,
+.left-navbar-items > ul,
+.right-navbar-items {
+  display: flex;
+  column-gap: 1.3rem;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar {
+  padding: 1rem;
+}
+
+.brand {
+  color: white;
+  font-weight: 600;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+}
+
+.navbar-items {
+  color: #9ba3b4;
+  list-style: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.navbar-items:hover {
+  color: white;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  border: 1px solid rgba(128, 128, 128, 0.441);
+  padding: 6px 6px 6px 10px;
+  border-radius: 4px;
+}
+
+input {
+  background-color: #0e0e0e;
+  border: none;
+  color: #9ba3b4;
+}
+
+input:focus {
+  outline: none;
+}
+
+.download-button {
+  padding: 10px;
+  padding: 8px 15px;
+  border-radius: 4px;
+  color: white;
+  background-color: #0078e1;
+  border: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006cca;
+}
+
+.new-update-info {
+  color: #9ba3b4;
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.new-update-info > a {
+  color: #1692ff;
+}
+
+.home-page {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-page > div {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.home-page-left {
+  width: 30vw;
+}
+
+.home-page-left > p:first-child {
+  background-color: rgba(255, 255, 255, 0.04);
+  width: fit-content;
+  color: #9ba3b4;
+  padding: 10px 10px;
+  border-radius: 1.5rem;
+  border: 1px solid #9ba3b422;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.home-page-left > p:nth-of-type(2) {
+  color: white;
+  width: 20vw;
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.home-page-left > button {
+  padding: 10px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: white;
+  background-color: #007be7;
+  border: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+}
+
+.home-page-left > button:hover {
+  background-color: #006cca;
+}
+
+.home-page-left > p:nth-of-type(3) {
+  color: #9ba3b4;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.home-page-left > p:nth-of-type(3) > a {
+  color: #40a6ff;
+  font-size: 0.9rem;
+}
+
+.home-page-left > p:nth-of-type(4) {
+  font-size: 0.7rem;
+  color: #9ba3b4;
+  margin-top: 0.9rem;
+}
+
+.home-page-left > p:nth-of-type(4) > a {
+  color: #40a6ff;
+}
