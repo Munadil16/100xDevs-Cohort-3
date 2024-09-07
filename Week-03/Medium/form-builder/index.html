@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Form Builder</title>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <article class="builder">
+          <h2>Form Builder</h2>
+
+          <label for="field-type">Select field type</label>
+          <select id="field-type" name="field-type">
+            <option value="text">Text</option>
+            <option value="password">Password</option>
+            <option value="button">Button</option>
+            <option value="file">File</option>
+            <option value="range">Range</option>
+            <option value="date">Date</option>
+          </select>
+
+          <label for="field-label">Field Label</label>
+          <input type="text" id="field-label" placeholder="Enter field label" />
+
+          <button type="button" class="add-field" onclick="addNewField()">
+            Add field
+          </button>
+        </article>
+
+        <article class="preview">
+          <h2>Form Preview</h2>
+        </article>
+      </section>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
